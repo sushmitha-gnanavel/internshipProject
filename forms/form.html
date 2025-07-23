@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Symposium</title>
+        <link rel="icon" href="symbol.png">
+        <style>
+            .con2{
+                /*background-image:url('bg2.png') ;*/
+                background-color:rgb(113, 167, 167);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                
+                
+            }
+            p{
+                word-spacing: 3px;
+                font-size: 17px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            label{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+            }
+            input{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+                text-align: center;
+                color: #847777;
+                border-radius: 5px;
+                
+            }
+            .con1{
+                /*background-image: url('bg2.png');*/
+                background-color: rgb(31, 159, 159);
+                height: 200px;
+
+            }
+            .con3{
+                background-color: rgba(255,255,255,0.3);
+                border-radius: 19px;
+            }
+            select{
+                font-size: 21px;
+                color: #847777;
+                text-align: center;
+                border-radius: 5px;
+            }
+
+        </style>
+
+
+
+    </head>
+    <body>
+        
+        <div style="text-align: center;" class="con1"> 
+        <h1 style="text-align: center;">Tech Symposium</h1>
+        <h2>ABC University</h2>
+        <p>Address: xy st.,chennai.Tamil nadu.</p>
+        <p><span> Number : 1234567890 </span> Email:abc@gmail.com</p>
+
+        </div>
+        
+        <hr>
+        
+        <div style="text-align: center;" class="con2">
+        <form action="/registration" method="post">
+            <div class="con3">
+            <table class="box" cellpadding="13">
+                <tr>
+                    <td>
+                    <label>Name :</label>
+                    <input type="text" id="fname" value="Enter Your First Name">
+                    </td>
+                    <td>
+                        <input type="text" id="lname" value="Enter Your Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email :</label>
+                        <input type="email" id="email" value="Enter your email"> <br>(Enter valid email address)
+                    </td>
+                    <td>
+                        <label>Gender :</label>
+                        <label>Male</label>
+                        <input type="checkbox" id="Male" value="Male">
+                        <label style="margin-left: 10px;">Female</label>
+                        <input type="checkbox" id="Female" value="Female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="margin-left: 100px;">Name of the Institution :</label>
+                        <input type="text" id="Institution" value="Institution Name" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="margin-left: 150px;">Field of Study :</label>
+                        <select name="Dept" id="Dept">
+                            <option value="0">Department:</option>
+                            <option value="mech">Mechanical</option>
+                            <option value="civil">Civil</option>
+                            <option value="EEE">Electrical and Electronic Engineering</option>
+                            <option value="ECE">Electronics and Communication Engineering</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                            <option value="AIDS">AIDS</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="margin-left: 60px;">Contact Number :</label>
+                        <input type="text" id="Number" value="Phone Number">
+                    </td>
+                </tr>
+
+            </table>
+            </div><br>
+            <input type="submit" value="Register">
+
+        </form>  
+        </div>
+    </body>
+</html>
