@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+         
+        <style>
+            .container{
+                width: 300px;
+                height: 300px;
+                padding: 20px;
+                top: 50%;
+                left: 50%;
+                background: rgba(255,255,255,0.5);
+                transform: translate(-50%,-50%);
+                position: fixed;
+                text-align: center;
+
+                
+            }
+            input{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+                text-align: center;
+                color: #847777;
+                border-radius: 5px;
+                
+            }
+            label{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+            }
+            select{
+                font-size: 21px;
+                color: #847777;
+                text-align: center;
+                border-radius: 5px;
+                width: 300px;
+            }
+            body{
+                background-color: cadetblue;
+}
+
+                
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Welcome To ABC Sports Event</h1>
+        <h3 style="text-align: center;">Fill The Following Form</h3>
+        <form action="/register" method="post">
+            <div class="container">
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Enter your Name"><br>
+                <label>Age:</label>
+                <input type="number" id="age" placeholder="Enter Your Age"><br>
+                <label>Standard:</label>
+                <select name="Standard" id="Std">
+                    <option value="0">Select</option>
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="3">III</option>
+                    <option value="4">IV</option>
+                    <option value="5">V</option>
+                    <option value="6">VI</option>
+                    <option value="7">VII</option>
+                    <option value="8">VIII</option>
+                    <option value="9">IX</option>
+                    <option value="10">X</option>
+                    <option value="11">XI</option>
+                    <option value="12">XII</option>
+                </select><br>
+                <label>Sports event</label>
+                <select name="sport" id="sport">
+                    <option value="0">Select</option>
+                    <option value="1">Running</option>
+                    <option value="2">Foot ball</option>
+                    <option value="3">Kho-Kho</option>
+                    <option value="4">Tennis</option>
+                    <option value="5">Volley Ball</option>
+                    <option value="6">Badminton</option>
+
+                </select><br>
+                <br>
+                <input type="submit" value="Register">
+                <button >
+                    <a href="index.html">Return</a>
+                </button>
+            </div>
+
+        </form>
+    </body>
+</html>
