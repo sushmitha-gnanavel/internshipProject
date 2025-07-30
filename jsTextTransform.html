@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+  <h1>Text Transformation</h1>
+  <textarea id="ip" placeholder="Type your text here..."></textarea><br>
+  <button onclick="applyReverse()">Reverse</button>
+  <button onclick="applySplit()">Split</button>
+  <button onclick="applySlice()">Slice (0-5)</button>
+  <button onclick="applySplice()">Splice</button>
+  <button onclick="applyConcat()">Concat with 'Hello'</button>
+  <div id="result"></div>
+
+  <script>
+    function getInputArray() {
+      return document.getElementById('ip').value.split('');
+    }
+
+    function applyReverse() {
+      var reversed = getInputArray().reverse().join('');
+      document.getElementById('result').innerText = reversed;
+    }
+
+    function applySplit() {
+      var splitArr = document.getElementById('ip').value.split(' ');
+      document.getElementById('result').innerText = splitArr.join(', ');
+    }
+
+    function applySlice() {
+      var sliced = document.getElementById('ip').value.slice(0, 5);
+      document.getElementById('result').innerText = sliced;
+    }
+
+    function applySplice() {
+      let arr = getInputArray();
+      arr.splice(2, 1, '*'); // Replace 3rd char with '*'
+      document.getElementById('result').innerText = arr.join('');
+    }
+
+    function applyConcat() {
+      const original = document.getElementById('ip').value;
+      const result = original.concat(' Hello!');
+      document.getElementById('result').innerText = result;
+    }
+  </script>
+</body>
+</html>
