@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>📲FD Calculator</title>
+
+        <style>
+            body{
+               
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+                background-image: url("fdBG.png");
+                background-position: center;
+                background-size: cover;
+            }
+            .box{
+                width: 450px;
+                height: 400px;
+                background-color: rgba(255,255,255,0.3);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+
+            }
+            .box1{
+                display: inline-block;
+            }
+            input{
+                width: 250px;
+                height: 45px;
+                border-radius: 25px;
+                font-size: large;
+                color: black;
+                background-color: white;
+            }
+           input:hover{
+            background-color: rgb(206, 202, 202);
+
+           }
+           button{
+            height: 30px;
+            width: 100px;
+            margin-left: 70px;
+            border-radius: 10px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box1">
+            <input id="mon" type="number" placeholder="Enter number of months"><br>
+            <br>
+            <button id="r" onclick="calculate()">Show Rate</button><p id="rate" style="text-align: center;"></p>
+            </div>
+        </div>
+
+        <script>
+            function calculate(){
+            var month=Number(document.getElementById('mon').value);
+            var Rate=document.getElementById('rate');
+            var r=document.getElementById('r');
+            if(month<3){
+                Rate.innerHTML= "The rate of Interest is 5.8"
+            }
+            else if(month>=3 && month<6){
+                Rate.innerHTML= "The rate of Interest is 6.5"
+            }
+            else if(month>=6 && month<9){
+                Rate.innerHTML= "The rate of Interest is 6.8"
+            }
+            else if(month>=9){
+                Rate.innerHTML= "The rate of Interest is 7.0"
+            }
+            else if(month<=0){
+                Rate.innerHTML= "Enter valid number"
+            }
+            else{
+                Rate.innerHTML= "Enter valid number"
+            }
+        }
+        </script>
+    </body>
+</html>
